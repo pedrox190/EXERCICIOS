@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--formulário para cadastro no curso de informatica-->
+    <h1>Cadastro no Curso de Informática</h1>
+    <form action="" method="post"> <!--"form" é o corpo do formulario e o "method post" é para enviar seus
+         dados para um servidor-->
+
+        <p>
+
+            <label for="inome">Nome</label><!--Serve para descrever o input e tabem ajuda o navergador a entender-->
+            <input type="text" placeholder="Digite aqui seu nome" required><!--input é a tag para criar uma caixa para
+            o usuario poder escrever dentro dela-->
+            <!--o placeholder é um mini texto dentro do input para descrever o que você deve fazer ou colocar algo-->
+            <!--o required é para deixar o campo obrigatorio-->
+        </p>
+
+        <p>
+            <label for="isobrenome">Idade</label>
+            <input type="number" placeholder="Digite sua idade" required>
+        </p>
+
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" placeholder="Digite seu E-mail" required>
+        </p>
+
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" placeholder="Digite sua senha" required><br><br>
+        </p>
+        <p>Turno:</p>
+        <p>
+            <input type="radio" name="Turno" id="imanha"><!--aqui eu mudei o type para "radio" para
+            criar uma bolinha para poder assinalar-->
+            <label for="iturno">Manha</label>
+
+
+            <input type="radio" name="Turno" id="iTarde">
+            <label for="iturno">Tarde</label>
+
+            <input type="radio" name="Turno" id="iNoite">
+            <label for="iturno">Noite</label><br><br>
+        </p>
+        <p>Interreses:</p>
+        <p>
+            <input type="checkbox" name="Programação" id="iprogamação"><!--aqui coloquei o type como "checkbox" para
+             criar um quadrado au qual você pode assinalar mais de uma vez em outros interreses-->
+            <label for="iprogamação">Programação</label>
+
+            <input type="checkbox" name="Design" id="iDesign">
+            <label for="iDesign">Design</label>
+
+            <input type="checkbox" name="Games" id="igames">
+            <label for="igames">Games</label>
+
+            <input type="checkbox" name="Redes" id="iredes">
+            <label for="iredes">Redes</label>
+        </p>
+        <p>Cidade:
+            <select name="Cidade" id="icurso"><!--esse select serve para criar um retangulo ao qual você
+            escolhe a opção-->
+                <option value="Selecione">Selecione...</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Belo Horizonte">Belo Horizonte</option><!--e essas são as opções que vai aparecer
+            no select-->
+            </select>
+        </p>
+        <p>
+            <label for="imensagen">Mensagem</label><br>
+            <textarea placeholder="Digite aqui uma mensagem..." id="imensagem" cols="30" rows="5"></textarea>
+            <!--textarea serve para criar um quadrado ao qual vc pode colocar uma mensagem-->
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p>
+
+            <input type="submit" name="Enviar" id="ienviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+
+    </form>
+
+</body>
+
+</html>
